@@ -31,7 +31,7 @@ Other recommended projects:<br>
 1. Clone repo
 
     ```bash
-    git clone https://github.com/xinntao/Real-ESRGAN.git
+    git clone git@github.com:haotiangu/Fast-Perturbation-Rectification-Neural-Network.git
     cd FPRN
     ```
 
@@ -110,7 +110,6 @@ Results are in the `results` folder
 If you have any question, please email `hgu8@stevens.edu`.
 
 <!---------------------------------- Projects that use Real-ESRGAN --------------------------->
-## 🧩 Projects that use Real-ESRGAN
+## 🧩 Projects that use FPRN
 
 If you encounter any problem when developing FPRN as real time attack defense in your projects, Please feel free to let me know.
-
