@@ -21,7 +21,7 @@ If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends
 Other recommended projects:<br>
 
 
-## 🔧 Dependencies and Installation
+## Dependencies and Installation
 
 - Python >= 3.7 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 - [PyTorch >= 1.7](https://pytorch.org/)
@@ -48,9 +48,8 @@ Other recommended projects:<br>
     python setup.py develop
     ```
 
----
 
-## ⚡ Quick Inference
+## Quick Inference
 
 There are usually three ways to inference FPRN.
 
@@ -103,13 +102,12 @@ python inference_FPRN.py -n FPRN_x4plus -i inputs --face_enhance
 Results are in the `results` folder
 
 
----
-
 ## Contact
 
 If you have any question, please email `hgu8@stevens.edu`.
 
 <!---------------------------------- Projects that use Real-ESRGAN --------------------------->
-## 🧩 Projects that use FPRN
+## Projects that use FPRN
 
 If you encounter any problem when developing FPRN as real time attack defense in your projects, Please feel free to let me know.
+
