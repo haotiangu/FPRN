@@ -13,9 +13,6 @@
 FPRN aims at developing **Image Restoration Algorithm for Online Image Resoration in real-time to Defend Against the Black-box Attack**.<br>
 This developed FPRN is trained with pure synthetic data. Since CNN can not infer the object label or localize the position in attacked image. This algorithm can be used to preprocess the black-box attacked image to improve inference confidence. Based on our test, the proposed FPRN can adapt to different image attack algorithm.
 
-🌌 Thanks for your feedbacks/suggestions.
-
----
 
 If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends 😊 <br>
 Other recommended projects:<br>
