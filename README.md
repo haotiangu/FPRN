@@ -56,8 +56,7 @@ If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends
 ## ⚡ Quick Inference
 
 There are usually three ways to inference FPRN.
-
-1. [Online Image Restoration](#online-inference)
+1. [Online inference](#offline-attacked-image-restoration)
 1. [Python script](#python-script)
 
 ### Offline Attacked Image Restoration
@@ -114,5 +113,4 @@ If you have any question, please email `hgu8@stevens.edu`.
 ## Projects that use FPRN
 
 If you encounter any problem when developing FPRN as real time attack defense in your projects, Please feel free to let me know.
-
 
