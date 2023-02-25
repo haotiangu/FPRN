@@ -2,15 +2,15 @@ import argparse
 import cv2
 import glob
 import os
-#from basicsr.archs.rrdbnet_arch import RRDBNet
 from basicsr.utils.download_util import load_file_from_url
 
-#from realesrgan import RealESRGANer
-#from realesrgan.archs.srvgg_arch import SRVGGNetCompact
 from FPRN import FPRNer
 from FPRN.archs.srvgg_arch import SRVGGNetCompact
 
 from FPRN.archs.srnet_arch import SRNet
+
+
+
 
 def main():
     """Inference demo for FPRN.
@@ -62,21 +62,21 @@ def main():
     if args.model_name == 'FPRN_x4plus':#'RealESRGAN_x4plus':  # x4 SRNet model
         model = SRNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
         netscale = 4
-        file_url = ['https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/FPRN_x4plus.pth']
+        file_url = ['https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth']
     elif args.model_name == 'SRNet_x4plus':#'RealESRNet_x4plus':  # x4 SRNet model
         model = SRNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=4)
         netscale = 4
-        file_url = ['https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/SRNet_x4plus.pth']
+        file_url = ['https://github.com/haotiangu/FPRN/releases/download/FPRN/SRNet_x4plus.pth']
     elif args.model_name == 'FPRN_x2plus':#'RealESRGAN_x2plus':  # x2 SRNet model
         model = SRNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=2)
         netscale = 2
-        file_url = ['https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/FPRN_x2plus.pth']
+        file_url = ['https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x2plus.pth']
     elif args.model_name == 'fprn-general-x4v3':#'realesr-general-x4v3':  # x4 VGG-style model (S size)
         model = SRVGGNetCompact(num_in_ch=3, num_out_ch=3, num_feat=64, num_conv=32, upscale=4, act_type='prelu')
         netscale = 4
         file_url = [
-            'https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/fprn-general-wdn-x4v3.pth',
-            'https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/fprn-general-x4v3.pth'
+            'https://github.com/haotiangu/FPRN/releases/download/FPRN/fprn-general-wdn-x4v3.pth',
+            'https://github.com/haotiangu/FPRN/releases/download/FPRN/fprn-general-x4v3.pth'
         ]
 
     # determine model paths
@@ -113,7 +113,7 @@ def main():
     if args.face_enhance:  # Use GFPGAN for face enhancement
         from gfpgan import GFPGANer
         face_enhancer = GFPGANer(
-            model_path='https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/GFPGANv1.3.pth',
+            model_path='https://github.com/haotiangu/FPRN/releases/download/FPRN/GFPGANv1.3.pth',
             upscale=args.outscale,
             arch='clean',
             channel_multiplier=2,
