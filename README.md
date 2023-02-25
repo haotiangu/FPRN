@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/FPRN_Training_Schmetic.png" height=120>
+  <img src="assets/FPRN_Training_Schmetic.png" height=160>
 </p>
 
 
@@ -22,7 +22,7 @@ This developed FPRN is trained with pure synthetic data. Since CNN can not infer
 
 
 If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends 😊 <br>
-Other recommended projects:<br>
+
 
 
 ## Dependencies and Installation
@@ -114,4 +114,5 @@ If you have any question, please email `hgu8@stevens.edu`.
 ## Projects that use FPRN
 
 If you encounter any problem when developing FPRN as real time attack defense in your projects, Please feel free to let me know.
+
 
