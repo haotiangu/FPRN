@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="assets/FPRN_Training_Schmetic.png" height=120>
+</p>
+
+
 <div align="center">
 
   ⚡[**Usage**](#-quick-inference) **|** 🏰[**Model Zoo**](docs/model_zoo.md) **|** 🔧[Install](#-dependencies-and-installation)  **|** 💻[Train](docs/Training.md) **|** 🎨[Contribution](docs/CONTRIBUTING.md)
