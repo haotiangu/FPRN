@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/FPRN_Training_Schmetic.png" height=120>
+  <img src="assets/FPRN_Training_Schmetic.png" height=150>
 </p>
 
 
