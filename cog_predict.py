@@ -2,6 +2,7 @@
 # This file is used for deploying replicate models
 # running: cog predict -i img=@inputs/00017_gray.png -i version='General - v3' -i scale=2 -i face_enhance=True -i tile=0
 
+
 import os
 
 os.system('pip install gfpgan')
@@ -30,13 +31,13 @@ class Predictor(BasePredictor):
         # download weights
         if not os.path.exists('weights/fprn-general-x4v3.pth'):
             os.system(
-                'wget https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/fprn-general-x4v3.pth -P ./weights'
+                'wget https://github.com/haotiangu/FPRN/releases/download/FPRN/fprn-general-x4v3.pth -P ./weights'
             )
         if not os.path.exists('weights/GFPGANv1.4.pth'):
-            os.system('wget https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/GFPGANv1.3.pth -P ./weights')
+            os.system('wget https://github.com/haotiangu/FPRN/releases/download/FPRN/GFPGANv1.3.pth -P ./weights')
         if not os.path.exists('weights/FPRN_x4plus.pth'):
             os.system(
-                'wget https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/FPRN_x4plus.pth -P ./weights'
+                'wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth -P ./weights'
             )
 
     def choose_model(self, scale, version, tile=0):
