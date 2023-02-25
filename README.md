@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/FPRN_Training_Schmetic.png" height=170>
+  <img src="assets/FPRN_Training_Schmetic.png" height=120>
 </p>
 
 
@@ -17,6 +17,8 @@
 
 FPRN aims at developing **Image Restoration Algorithm for Online Image Resoration in real-time to Defend Against the Black-box Attack**.<br>
 This developed FPRN is trained with pure synthetic data. Since CNN can not infer the object label or localize the position in attacked image. This algorithm can be used to preprocess the black-box attacked image to improve inference confidence. Based on our test, the proposed FPRN can adapt to different image attack algorithm.
+
+🌌 Thanks for your feedbacks/suggestions.
 
 
 If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends 😊 <br>
@@ -51,14 +53,14 @@ Other recommended projects:<br>
     ```
 
 
-## Quick Inference
+## ⚡ Quick Inference
 
 There are usually three ways to inference FPRN.
 
 1. [Online Image Restoration](#online-inference)
 1. [Python script](#python-script)
 
-### Offline Attacked Image Restoration 
+### Offline Attacked Image Restoration
 
 1. [Colab Demo](https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo?usp=sharing) for FPRN.
 
@@ -89,10 +91,10 @@ A common command: python inference_FPRN.py -n FPRN_x4plus -i infile --outscale 3
 
 #### Inference general images
 
-Download pre-trained models: [FPRN_x4plus.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth)
+Download pre-trained models: [FPRN_x4plus.pth](https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/FPRN_x4plus.pth)
 
 ```bash
-wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -P weights
+wget https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/FPRN_x4plus.pth -P weights
 ```
 
 Inference!
