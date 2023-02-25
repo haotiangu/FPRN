@@ -35,7 +35,7 @@ If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends
 1. Clone repo
 
     ```bash
-    git clone https://github.com/haotiangu/FPRN.git
+    git clone git@github.com:haotiangu/FPRN.git
     cd FPRN
     ```
 
@@ -90,10 +90,10 @@ A common command: python inference_FPRN.py -n FPRN_x4plus -i infile --outscale 3
 
 #### Inference general images
 
-Download pre-trained models: [FPRN_x4plus.pth](https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/FPRN_x4plus.pth)
+Download pre-trained models: [FPRN_x4plus.pth](https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth)
 
 ```bash
-wget https://github.com/haotiangu/Fast-Perturbation-Rectification-Neural-Network/releases/download/FPRN/FPRN_x4plus.pth -P weights
+wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth -P weights
 ```
 
 Inference!
