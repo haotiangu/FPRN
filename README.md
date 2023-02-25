@@ -35,7 +35,7 @@ If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends
 1. Clone repo
 
     ```bash
-    git clone git@github.com:haotiangu/Fast-Perturbation-Rectification-Neural-Network.git
+    git clone https://github.com/haotiangu/FPRN.git
     cd FPRN
     ```
 
