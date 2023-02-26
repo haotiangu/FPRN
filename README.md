@@ -11,9 +11,7 @@
 </div>
 
 
-<!-- 1. You can try in our website: [ARC Demo](https://arc.tencent.com/en/ai-demos/imgRestore) (now only support RealESRGAN_x4plus_anime_6B) -->
-1. :boom: Online Colab demo for FPRN: [![Colab](https://img.shields.io/static/v1?label=Demo&message=Colab&color=orange)](https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo?usp=sharing)
-<!-- 1. You can watch enhanced animations in [Tencent Video](https://v.qq.com/s/topic/v_child/render/fC4iyCAM.html). 欢迎观看[腾讯视频动漫修复](https://v.qq.com/s/topic/v_child/render/fC4iyCAM.html) -->
+1. :boom: Online Colab demo for FPRN: [![Colab](https://img.shields.io/static/v1?label=Demo&message=Colab&color=orange)](https://colab.research.google.com/drive/1rdG1SR-enKR8GNCapBi1uEsL_O8thPwZ)
 
 FPRN aims at developing **Image Restoration Algorithm for Online Image Resoration in real-time to Defend Against the Black-box Attack**.<br>
 This developed FPRN is trained with pure synthetic data. Since CNN can not infer the object label or localize the position in attacked image. This algorithm can be used to preprocess the black-box attacked image to improve inference confidence. Based on our test, the proposed FPRN can adapt to different image attack algorithm.
