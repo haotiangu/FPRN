@@ -70,9 +70,9 @@ You can merge several folders into one meta_info txt. Here is the example:
 
 ### Train SRNet
 
-1. Download pre-trained model [SRNet](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.1/ESRGAN_SRx4_DF2KOST_official-ff704c30.pth) into `experiments/pretrained_models`.
+1. Download pre-trained model [SRNet](https://github.com/haotiangu/FPRN/releases/download/FPRN/SRNET_SRx4_DF2K.pth) into `experiments/pretrained_models`.
     ```bash
-    wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.1/ESRGAN_SRx4_DF2KOST_official-ff704c30.pth -P experiments/pretrained_models
+    wget https://github.com/haotiangu/FPRN/releases/download/FPRN/SRNET_SRx4_DF2K.pth -P experiments/pretrained_models
     ```
 1. Modify the content in the option file `options/train_SRNet_x4plus.yml` accordingly:
     ```yml
@@ -176,12 +176,12 @@ Download pre-trained models into `experiments/pretrained_models`.
 
 - *RealESRGAN_x4plus.pth*:
     ```bash
-    wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -P experiments/pretrained_models
+    wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth -P experiments/pretrained_models
     ```
 
 - *RealESRGAN_x4plus_netD.pth*:
     ```bash
-    wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.3/RealESRGAN_x4plus_netD.pth -P experiments/pretrained_models
+    wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus_netD.pth -P experiments/pretrained_models
     ```
 
 **3. Finetune**
@@ -233,12 +233,12 @@ Download pre-trained models into `experiments/pretrained_models`.
 
 - *RealESRGAN_x4plus.pth*
     ```bash
-    wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -P experiments/pretrained_models
+    wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth -P experiments/pretrained_models
     ```
 
 - *RealESRGAN_x4plus_netD.pth*
     ```bash
-    wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.3/RealESRGAN_x4plus_netD.pth -P experiments/pretrained_models
+    wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus_netD.pth -P experiments/pretrained_models
     ```
 
 **3. Finetune**
