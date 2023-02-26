@@ -174,12 +174,12 @@ See [this section](#dataset-preparation) for more details.
 
 Download pre-trained models into `experiments/pretrained_models`.
 
-- *RealESRGAN_x4plus.pth*:
+- *FPRN_x4plus.pth*:
     ```bash
     wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth -P experiments/pretrained_models
     ```
 
-- *RealESRGAN_x4plus_netD.pth*:
+- *FPRN_x4plus_netD.pth*:
     ```bash
     wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus_netD.pth -P experiments/pretrained_models
     ```
@@ -231,12 +231,12 @@ python scripts/generate_meta_info_pairdata.py --input datasets/DF2K/DIV2K_train_
 
 Download pre-trained models into `experiments/pretrained_models`.
 
-- *RealESRGAN_x4plus.pth*
+- *FPRN_x4plus.pth*
     ```bash
     wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus.pth -P experiments/pretrained_models
     ```
 
-- *RealESRGAN_x4plus_netD.pth*
+- *FPRN_x4plus_netD.pth*
     ```bash
     wget https://github.com/haotiangu/FPRN/releases/download/FPRN/FPRN_x4plus_netD.pth -P experiments/pretrained_models
     ```
