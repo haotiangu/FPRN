@@ -11,7 +11,7 @@
 </div>
 
 
-1. :boom: Online Colab demo for FPRN: [![Colab](https://img.shields.io/static/v1?label=Demo&message=Colab&color=orange)](https://colab.research.google.com/drive/1rdG1SR-enKR8GNCapBi1uEsL_O8thPwZ)
+1. :boom: Online Colab demo for FPRN: [![Colab]()](https://colab.research.google.com/drive/1rdG1SR-enKR8GNCapBi1uEsL_O8thPwZ)
 
 FPRN aims at developing **Image Restoration Algorithm for Online Image Resoration in real-time to Defend Against the Black-box Attack**.<br>
 This developed FPRN is trained with pure synthetic data. Since CNN can not infer the object label or localize the position in attacked image. This algorithm can be used to preprocess the black-box attacked image to improve inference confidence. Based on our test, the proposed FPRN can adapt to different image attack algorithm.
