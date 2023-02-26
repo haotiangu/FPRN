@@ -6,7 +6,7 @@ import os
 import subprocess
 import time
 
-version_file = 'realesrgan/version.py'
+version_file = 'FPRN/version.py'
 
 
 def readme():
