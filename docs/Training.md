@@ -132,27 +132,27 @@ You can merge several folders into one meta_info txt. Here is the example:
 
 ### Train Autoencoder
 
-1. After the training of SRNet, you now have the file `experiments/train_RealESRNetx4plus_1000k_B12G4_fromESRGAN/model/net_g_1000000.pth`. If you need to specify the pre-trained path to other files, modify the `pretrain_network_g` value in the option file `train_autoencoder_x4plus.yml`.
-1. Modify the option file `train_autoencoder_x4plus.yml` accordingly. Most modifications are similar to those listed above.
+1. After the training of SRNet, you now have the file `experiments/train_RealESRNetx4plus_1000k_B12G4_fromESRGAN/model/net_g_1000000.pth`. If you need to specify the pre-trained path to other files, modify the `pretrain_network_g` value in the option file `train_fprn_x4plus.yml`.
+1. Modify the option file `train_fprn_x4plus.yml` accordingly. Most modifications are similar to those listed above.
 1. Before the formal training, you may run in the `--debug` mode to see whether everything is OK. Before running training script, check the GPU configuration no matter server or workstation. We use four GPUs for training:
     ```bash
     CUDA_VISIBLE_DEVICES=0,1,2,3 \
-    python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/train_autoencoder_x4plus.yml --launcher pytorch --debug
+    python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/train_fprn_x4plus.yml --launcher pytorch --debug
     ```
 
     Train with **a single GPU** in the *debug* mode:
     ```bash
-    python FPRN/train.py -opt options/train_autoencoder_x4plus.yml --debug
+    python FPRN/train.py -opt options/train_fprn_x4plus.yml --debug
     ```
 1. The formal training. We use four GPUs for training. We use the `--auto_resume` argument to automatically resume the training if necessary.
     ```bash
     CUDA_VISIBLE_DEVICES=0,1,2,3 \
-    python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/train_autoencoder_x4plus.yml --launcher pytorch --auto_resume
+    python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/train_fprn_x4plus.yml --launcher pytorch --auto_resume
     ```
 
     Train with **a single GPU**:
     ```bash
-    python FPRN/train.py -opt options/train_autoencoder_x4plus.yml --auto_resume
+    python FPRN/train.py -opt options/train_fprn_x4plus.yml --auto_resume
     ```
 
 ## Finetune FPRN on your own dataset
@@ -186,12 +186,12 @@ Download pre-trained models into `experiments/pretrained_models`.
 
 **3. Finetune**
 
-Modify [options/finetune_autoencoder_x4plus.yml](options/finetune_autoencoder_x4plus.yml) accordingly, especially the `datasets` part:
+Modify [options/finetune_fprn_x4plus.yml](options/finetune_fprn_x4plus.yml) accordingly, especially the `datasets` part:
 
 ```yml
 train:
     name: DF2K
-    type: AutoencoderDataset
+    type: FPRNDataset
     dataroot_gt: datasets/DF2K  # modify to the root path of your folder
     meta_info: datasets/DF2K/meta_info/meta_info_DF2Kmultiscale.txt  # modify to your own generate meta info txt
     io_backend:
@@ -202,12 +202,12 @@ We use four GPUs for training. We use the `--auto_resume` argument to automatica
 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 \
-python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/finetune_autoencoder_x4plus.yml --launcher pytorch --auto_resume
+python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/finetune_fprn_x4plus.yml --launcher pytorch --auto_resume
 ```
 
 Finetune with **a single GPU**:
 ```bash
-python FPRN/train.py -opt options/finetune_autoencoder_x4plus.yml --auto_resume
+python FPRN/train.py -opt options/finetune_fprn_x4plus.yml --auto_resume
 ```
 
 ### Use your own paired data
@@ -243,12 +243,12 @@ Download pre-trained models into `experiments/pretrained_models`.
 
 **3. Finetune**
 
-Modify [options/finetune_autoencoder_x4plus_pairdata.yml](options/finetune_autoencoder_x4plus_pairdata.yml) accordingly, especially the `datasets` part:
+Modify [options/finetune_fprn_x4plus_pairdata.yml](options/finetune_fprn_x4plus_pairdata.yml) accordingly, especially the `datasets` part:
 
 ```yml
 train:
     name: DIV2K
-    type: AutoencoderPairedDataset
+    type: FPRNPairedDataset
     dataroot_gt: datasets/DF2K  # modify to the root path of your folder
     dataroot_lq: datasets/DF2K  # modify to the root path of your folder
     meta_info: datasets/DF2K/meta_info/meta_info_DIV2K_sub_pair.txt  # modify to your own generate meta info txt
@@ -260,10 +260,10 @@ We use four GPUs for training. We use the `--auto_resume` argument to automatica
 
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 \
-python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/finetune_autoencoder_x4plus_pairdata.yml --launcher pytorch --auto_resume
+python -m torch.distributed.launch --nproc_per_node=4 --master_port=4321 FPRN/train.py -opt options/finetune_fprn_x4plus_pairdata.yml --launcher pytorch --auto_resume
 ```
 
 Finetune with **a single GPU**:
 ```bash
-python FPRN/train.py -opt options/finetune_autoencoder_x4plus_pairdata.yml --auto_resume
+python FPRN/train.py -opt options/finetune_fprn_x4plus_pairdata.yml --auto_resume
 ```
