@@ -40,10 +40,7 @@ If FPRN is helpful, please help to ⭐ this repo or recommend it to your friends
 1. Install dependent packages
 
     ```bash
-    # Install basicsr - https://github.com/xinntao/BasicSR
-    # We use BasicSR for both training and inference
     pip install basicsr
-    # facexlib and gfpgan are for face enhancement
     pip install facexlib
     pip install gfpgan
     pip install -r requirements.txt
