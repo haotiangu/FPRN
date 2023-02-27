@@ -56,7 +56,7 @@ There are usually three ways to inference FPRN.
 
 ### Offline Attacked Image Restoration
 
-1. [Colab Demo](https://colab.research.google.com/drive/1k2Zod6kSHEvraybHl50Lys0LerhyTMCo?usp=sharing) for FPRN.
+1. [Colab Demo](https://colab.research.google.com/drive/1rdG1SR-enKR8GNCapBi1uEsL_O8thPwZ) for FPRN.
 
 
 
