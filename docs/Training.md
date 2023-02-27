@@ -13,6 +13,8 @@
 
 ## Train FPRN
 
+Online Colab training for FPRN:[![Colab]()](https://colab.research.google.com/drive/1jhDQgZaSWGIhhEb5HlPvB6-ZL5eCAUns)
+
 ### Overview
 
 The training has been divided into two stages. These two stages have the same data synthesis process and training pipeline, except for the loss functions. Specifically,
